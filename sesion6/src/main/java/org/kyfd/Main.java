@@ -6,10 +6,9 @@ import models.Professor;
 
 public class Main {
     public static void main(String[] args) {
-        // Crear una coordinación
         Coordination coordinacion1 = new Coordination(12345, "Ingenieria en Sistemas");
 
-        // Crear un profesor y asignarle una coordinación
+
         Professor profesor1 = new Professor();
         profesor1.setNombre("Kevin");
         profesor1.setApellidos("Fittoria");
@@ -17,14 +16,12 @@ public class Main {
         profesor1.setTitulo("ING.");
         profesor1.setCoordinacion(coordinacion1);
 
-        // Crear una facultad y agregar la coordinación
         Faculty facultad1 = new Faculty();
         facultad1.setEdificio("Edificio o");
         facultad1.setId(1);
         facultad1.setNombre("Facultad de Ingenieria");
         facultad1.agregarCoordinacion(12345, "Ingenieria en sistemas");
 
-        // Mostrar información
         System.out.println("Información del Profesor:");
         System.out.println("Nombre: " + profesor1.getNombre() + " " + profesor1.getApellidos());
         System.out.println("ID: " + profesor1.getId());

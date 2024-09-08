@@ -8,14 +8,13 @@ package models;
 public class Coordination {
 
     private int codigo;
-    private String nombre;  // Cambié el tipo de 'int' a 'String' para el nombre
-
+    private String nombre;
     public Coordination(int codigo, String nombre) {
         this.codigo = codigo;
         this.nombre = nombre;
     }
 
-    // Métodos adicionales como getters y setters pueden ser útiles aquí
+
     public int getCodigo() {
         return codigo;
     }
